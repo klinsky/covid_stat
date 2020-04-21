@@ -6,7 +6,7 @@ const COUNTRIES_LIST = require('./constants');
 
 const bot = new Telegraf(process.env.bot_token);
 bot.start((ctx) => ctx.reply(`Привет, ${ctx.message.from.first_name}!
-Чтобы получить статистику, выбери страну страну или впиши самостоятельно, перечень всех стран доступен по команде /countries `,
+Чтобы получить статистику, выбери страну или впиши самостоятельно, перечень всех стран доступен по команде /countries `,
 Markup.keyboard([
   ['Ukraine', 'USA'],
   ['Russia', 'Belarus'],
