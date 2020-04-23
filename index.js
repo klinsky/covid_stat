@@ -18,7 +18,6 @@ Markup.keyboard([
 bot.command('countries',((ctx) => ctx.reply(COUNTRIES_LIST)));
 bot.hears('привет', (ctx) => ctx.reply('Ну привет'));
 bot.hears('Привет', (ctx) => ctx.reply('Драсте'));
-bot.hears('Максим здоров?', (ctx) => ctx.reply('Пфф, конечно! Ведь двери в подъезд открывает Катя!'));
 
 bot.on('text', async (ctx) => {
   let data = {};
